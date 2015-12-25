@@ -1,0 +1,166 @@
+body{
+	background-color: #4D6551;
+/*	overflow: hidden;*/
+}
+
+.Workflow-container {
+	width: 100%;
+	height: 300px;
+	overflow-x: scroll;
+
+}
+.ul-parent {
+	display: inline-block;
+	height: 100px;
+	white-space: nowrap;
+}
+
+p{
+	-webkit-margin-before: 0px !important;
+	-webkit-margin-after: 0px !important;
+	display: inline-block;
+}
+
+.create_workspace_textElement{
+	background: rgba(0,0,0,0.2);
+    border: 0px;
+    color:white;
+    border-radius: 4px;
+    padding: 10px 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.create_workspace_textElement:hover{
+	background: rgba(0,0,0,0.4);
+}
+
+.create_workspace_textElement:focus{
+	outline: none;
+	border:0px;
+}
+
+
+.li-parent {
+	box-shadow: 0px 0px 5px grey;
+	width: 250px;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 4px;
+    padding: 15px 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #555;
+    position: relative;
+    margin-top: 0px;
+    vertical-align: top;
+    background-color: #A6D294;
+}
+
+.li-parent ul{
+	list-style-type: none;
+	-webkit-padding-start: 0px !important; 
+}
+
+.li-parent li{
+	border: solid 1px;
+	margin-left: -20px;
+}
+	
+.handle{
+	width: 100%;
+    cursor: move;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #555;
+}
+#cards li{
+	cursor: copy;
+}
+.highlight {
+	/*border: 1px dashed #ddd;*/
+	background-color: rgba(0,0,0,0.2);
+	display: inline-block;
+	margin: 4px;
+}
+#contains_workspaces > .li-parent[class~=ui-sortable-helper] {
+transform: rotate(5deg);	
+}
+li > #cards > li[class~=ui-sortable-helper] {
+transform: rotate(5deg);	
+}
+
+li > #cards > li {
+ 	margin: 10px 0px;
+    background: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;	
+    box-shadow: 1px 1px 2px lightgrey;
+}
+
+.before-list{
+	background-color: transparent;
+	padding: 0px;
+	box-shadow: none;
+}
+.cancel_drag {
+	  background-color: #E2E4E6 !important;
+    height: 0px;
+		border-radius: 0px; 
+		box-shadow: 0px 0px 0px lightgrey !important;
+		cursor: none;
+}
+
+.no_padding_bottom {
+	padding-bottom: 0px !important;
+}
+
+
+/*For ScrollBar*/
+.Workflow-container::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.Workflow-container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.Workflow-container::-webkit-scrollbar-thumb {
+  background-color: #E2E4E6;
+  outline: 1px solid slategrey;
+}
+
+.add-a-card{
+	background: #7CB188;
+  margin: -10px -20px;
+  padding: 10px 10px;
+  border-radius: 0px 0px 5px 5px;
+	cursor: pointer !important;
+}
+
+.add-a-card:hover{
+	background: #72A799;
+}
+
+.delete-workspace{
+	position: absolute;
+  right: 8px;
+  top: 3px;
+	cursor: pointer !important;
+	color : #244234;
+}
+
+.iw-modalBox{
+    padding:5px;
+    border:1px solid #fff;
+		border-radius: 4px;
+}
+
+.iw-modalOverlay{
+    background: #000;
+    opacity:.6;
+}
